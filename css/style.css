@@ -1,3 +1,53 @@
 body {
    font-family: 'Raleway', Halvetica, sans-serif;
 }
+.container{
+   margin: 0 auto;
+   width: 1050px;
+}
+header{
+   background-color: black;
+   color: white;
+   font-size: 25px;
+}
+.navigation{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.brand a{
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+}
+.nav-items{
+   display: flex;
+}
+.nav-item{
+   list-style: none;
+   margin: 10px 25px;
+}
+.nav-item a{
+   text-decoration: none;
+   color: white;
+}
+.dropdown{
+   display: none;
+}
+.page{
+   background: linear-gradient(#ffffff, #cdcdd5);
+}
+.page-header{
+   display: flex;
+   justify-content: space-between;
+}
+.article h1{
+   text-transform: uppercase;
+}
+
+
+
+
+.h1--green{
+   color: #27c7ab;
+}
