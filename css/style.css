@@ -1,53 +1,248 @@
 body {
-   font-family: 'Raleway', Halvetica, sans-serif;
-}
-.container{
-   margin: 0 auto;
-   width: 1050px;
-}
-header{
-   background-color: black;
-   color: white;
-   font-size: 25px;
-}
-.navigation{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-.brand a{
-   text-decoration: none;
-   color: white;
-   text-transform: uppercase;
-}
-.nav-items{
-   display: flex;
-}
-.nav-item{
-   list-style: none;
-   margin: 10px 25px;
-}
-.nav-item a{
-   text-decoration: none;
-   color: white;
-}
-.dropdown{
-   display: none;
-}
-.page{
-   background: linear-gradient(#ffffff, #cdcdd5);
-}
-.page-header{
-   display: flex;
-   justify-content: space-between;
-}
-.article h1{
-   text-transform: uppercase;
+  font-family: 'Raleway', Halvetica, sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1060px;
+}
 
+/*Navigation*/
 
+header {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
 
-.h1--green{
-   color: #27c7ab;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brand a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.brand a:hover {
+  opacity: 0.9;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 25px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-item a:hover {
+  opacity: 0.9;
+}
+
+.dropdown {
+  display: none;
+  /*zmienic to pozniej*/
+}
+
+/*Slider section*/
+
+.page {
+  background: linear-gradient(#ffffff, #cdcdd5);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign {
+  font-size: 60px;
+  color: #27c7ab;
+}
+
+.article {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.article p {
+  width: 450px;
+}
+
+.article h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
+.btn {
+  border-radius: 10px;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #24ba9f;
+  text-align: center;
+  color: white;
+}
+
+.btn--more {
+  padding: 15px 40px;
+}
+
+.h1--green {
+  color: #27c7ab;
+  font-weight: 700;
+}
+
+/*Gallery section*/
+
+.gallery {
+  margin: 25px 0 70px 0;
+}
+
+.images {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.card p:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 0 0 0 12px white;
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+  display: block;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: -35px;
+}
+
+.card {
+  width: 330px;
+  height: 500px;
+  background-color: #f9f9f9;
+  position: relative;
+  border: 2px solid #c2c2c2;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: #27c7ab;
+  text-align: center;
+  padding-top: 14px;
+  font-size: 18px;
+}
+
+.cards {
+  background-color: #f1f1f1;
+  padding-bottom: 70px;
+}
+
+.cards-items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle-price {
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-price p {
+  margin: 0;
+  padding: 3px;
+  font-weight: 600;
+  color: #c2c2c2;
+}
+
+.circle-price p:first-child {
+  font-size: 32px;
+}
+
+.circle-price p:nth-child(2) {
+  font-size: 12px;
+}
+
+.lower {
+  font-size: 10px;
+  position: absolute
+}
+
+.cards h2 {
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.underline {
+  width: 320px;
+  height: 8px;
+  background-color: #27c7ab;
+  margin-top: 10px;
+  margin-bottom: 75px;
+}
+
+.contact {
+  margin-bottom: 85px;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container p {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
