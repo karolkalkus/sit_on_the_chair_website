@@ -57,11 +57,52 @@ header {
   opacity: 0.9;
 }
 
+
+/*
+.dropdown{              dropdown to ul 
+  padding-top: 40px;
+  display: none;
+  width: 170px;
+  margin-left: calc(50% - 85px);
+  position: absolute;
+  list-style: none;
+    color: #E6474A;
+  background: #52364A;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom: 2px solid black;
+  
+}
+.dropdown li{    dropdown to elementy ul 
+  padding: 10px 10px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.header__list-item:hover ul{      od li wysuwa sie lista
+  display: block;
+}
+*/
+
+
+
 .dropdown {
   display: none;
+  background-color: #000000;
+  margin-top: 25px;
+  padding: 0 15px 15px 15px;
+  position: absolute;
+  left: -30px;
   /*zmienic to pozniej*/
 }
-
+.dropdown li{
+  font-size: 14px;
+  margin: 0;
+  padding-top: 15px;
+  
+}
+.nav-item:hover ul{
+  display: block;
+}
 /*Slider section*/
 
 .page {
@@ -77,6 +118,11 @@ header {
 .sign {
   font-size: 60px;
   color: #27c7ab;
+}
+
+.sign:hover {
+  color: black;
+  opacity: 0.5;
 }
 
 .article {
@@ -104,6 +150,12 @@ header {
   background-color: #24ba9f;
   text-align: center;
   color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a5a5a5;
+  opacity: 0.9;
 }
 
 .btn--more {
@@ -144,6 +196,12 @@ header {
   top: -35px;
 }
 
+.card-green p:before {
+  box-shadow: inset 0 0 0 12px #27c7ab;
+  background-color: #ffffff;
+  border: 2px solid #27c7ab;
+}
+
 .card {
   width: 330px;
   height: 500px;
@@ -155,6 +213,28 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   text-transform: uppercase;
+}
+
+.card-green {
+  background-color: #27c7ab;
+  border: 2px solid #27c7ab;
+}
+
+.card-green > p:first-of-type {
+  color: #ffffff;
+}
+
+.card-green .circle-price {
+  border: 2px solid #27c7ab;
+}
+
+.card-green .circle-price p {
+  color: #27c7ab;
+}
+
+.card-green .card-btn button {
+  background-color: #ffffff;
+  color: #27c7ab;
 }
 
 .card p {
@@ -196,7 +276,7 @@ header {
 }
 
 .circle-price p:first-child {
-  font-size: 32px;
+  font-size: 45px;
 }
 
 .circle-price p:nth-child(2) {
@@ -208,7 +288,50 @@ header {
   position: absolute
 }
 
-.cards h2 {
+/*Kolory belek w karcie */
+
+.services {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+.services .white {
+  background-color: #ffffff;
+  color: #c2c2c2;
+  margin: 0;
+  padding: 0;
+  padding: 13px 0;
+}
+
+.services .light-gray {
+  background-color: #e4e4e4;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+  padding: 13px 0;
+}
+
+.services .gray {
+  background-color: #f1f1f1;
+  color: #c2c2c2;
+  margin: 0;
+  padding: 0;
+  padding: 13px 0;
+}
+
+.card-btn {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.btn-join {
+  padding: 10px 30px;
+}
+
+.text-underline {
   text-transform: uppercase;
   margin: 0;
   padding-top: 50px;
@@ -225,6 +348,49 @@ header {
 .contact {
   margin-bottom: 85px;
 }
+
+.contact-forms {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form1 form {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+
+.contact-form2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+  padding: 25px;
+  font-size: 26px;
+  border: 1px solid #27c7ab;
+}
+
+.input {
+  border: 1px solid #27c7ab;
+  margin-bottom: 25px;
+  padding: 25px;
+  font-size: 26px;
+}
+
+::placeholder {
+  color: rgba(161, 161, 161, 0.7);
+}
+
+
+
 
 footer {
   margin-bottom: 50px;
@@ -245,4 +411,16 @@ footer {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex-container p {
+  color: #c2c2c2;
+}
+
+.flex-container p:last-child {
+  text-transform: uppercase;
+}
+
+.on-bold {
+  font-weight: 600;
 }

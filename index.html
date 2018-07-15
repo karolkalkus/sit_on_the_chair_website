@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Sit On Chair</title>
@@ -60,7 +61,7 @@
     </section>
     <section class="cards">
       <div class="container">
-        <h2>cennik</h2>
+        <h2 class="text-underline">cennik</h2>
         <div class="underline"></div>
         <div class="cards-items">
           <div class="card">
@@ -69,12 +70,24 @@
               <p>85<span class="lower">99</span></p>
               <p>pln/msc</p>
             </div>
+            <div class = "services">
+              <p class="gray">Zakup towaru + dowóz</p>
+              <p class="light-gray">Serwis</p>
+            </div>
+            <div class="card-btn">
+            <button type="submit" class="btn btn-join">Dołącz</button>
+            </div>
           </div>
           <div class="card card-green">
             <p>standard plan</p>
             <div class="circle-price">
               <p>95<span class="lower">99</span></p>
               <p>pln/msc</p>
+            </div>
+            <div class = "services">
+              <p class="white">Zakup towaru + dowóz</p>
+              <p class="light-gray">Serwis</p>
+              <p class="white">Gwarancja 5 lat</p>
             </div>
           </div>
           <div class="card">
@@ -83,20 +96,36 @@
               <p>211<span class="lower">00</span></p>
               <p>pln/msc</p>
             </div>
+            <div class = "services">
+              <p class = "gray">Zakup towaru + dowóz</p>
+              <p class="light-gray">Serwis</p>
+              <p class = "gray">Gwarancja 6 lat</p>
+              <p class="light-gray">Porady projektanta</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="contact">
       <div class="container">
+        <h2 class="text-underline">kontakt</h2>
+        <div class="underline"></div>
         <div class="contact-forms">
           <div class="contact-form1">
             <form action="">
-
+            <label>
+            <input class = "input" type="text" placeholder="Imię"/>
+            </label>
+            <label>
+            <input class = "input" type="email" placeholder="E-mail"/>
+            </label>
+            <label>
+            <textarea name="" placeholder="Wiadomość"/></textarea>
+            </label>
             </form>
           </div>
           <div class="contact-form2">
-
+            <img src="img/red_chair.png" alt="">
           </div>
         </div>
       </div>
@@ -113,10 +142,11 @@
             <a href="#"><img src="img/pinterest.png" alt=""></a>
             <a href="#"><img src="img/twitter.png" alt=""></a>
           </div>
-          <p>sit <span>on</span> chair</p>
+          <p>sit <span class="on-bold">on</span> chair</p>
         </div>
       </div>
     </div>
   </footer>
 </body>
+
 </html>
