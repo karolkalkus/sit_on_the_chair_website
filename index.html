@@ -7,71 +7,78 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <div class="navigation">
-        <div class="brand">
-          <a href="#">Sit <span class="h1--green">on</span> chair</a>
-        </div>
-        <nav>
-          <ul class="nav-items">
-            <li class="nav-item"><a href="#">O firmie</a>
-              <ul class="dropdown">
-                <li class="dropdown-item nav-item"><a href="#">Aktualności</a></li>
-                <li class="dropdown-item nav-item"><a href="#">Nasz team</a></li>
-                <li class="dropdown-item nav-item"><a href="#">Historia</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a href="#">Galeria</a></li>
-            <li class="nav-item"><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
+    <!--    <div class="container">-->
+    <div class="container navigation">
+      <div class="brand">
+        <a href="#">Sit <span class="h1--green">on</span> chair</a>
       </div>
+      <nav>
+        <ul class="nav-items">
+          <li id="drop" class="nav-item"><a href="#">O firmie</a>
+            <ul id="dropdown" class="dropdown">
+              <li class="dropdown-item nav-item"><a href="#">Aktualności</a></li>
+              <li class="dropdown-item nav-item"><a href="#">Nasz team</a></li>
+              <li class="dropdown-item nav-item"><a href="#">Historia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">Galeria</a></li>
+          <li class="nav-item"><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
+    <!--    </div>-->
   </header>
+
+  <!--  Main section-->
+
   <section class="main">
     <section class="page">
-      <div class="container">
-        <div class="page-header">
-          <span class="sign">&lt;</span>
-          <img src="img/black_chair2.png" alt="">
-          <div class="article">
-            <h1>sit <span class="h1--green">on</span> our <span class="h1--green">chair</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, similique iste. Beatae iusto repellat suscipit neque natus atque unde obcaecati autem doloremque consequatur quia enim, laudantium, similique delectus molestias quibusdam.</p>
-            <button class="btn btn--more" type="submit">Zobacz więcej</button>
-          </div>
-          <span class="sign">&gt;</span>
+      <!--      <div class="container">-->
+      <div class="container page-header">
+        <span id="prev" class="sign">&lt;</span>
+        <div class="slider">
+        <img src="img/orange_chair.png" alt="">
+        <img src="img/black_chair.png" alt="">
         </div>
+        <div class="article">
+          <h1>sit <span class="h1--green">on</span> our <span class="h1--green">chair</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, similique iste. Beatae iusto repellat suscipit neque natus atque unde obcaecati autem doloremque consequatur quia enim, laudantium, similique delectus molestias quibusdam.</p>
+          <button class="btn btn--more" type="submit">Zobacz więcej</button>
+        </div>
+        <span id="next" class="sign">&gt;</span>
       </div>
+      <!--      </div>-->
     </section>
     <section class="gallery">
-      <div class="container">
-        <div class="images">
-         <div class="image1">
-           <div class="thumb">
+      <!--      <div class="container">-->
+      <div class="container images">
+        <div id="image" class="image1">
+          <div id="thumb" class="thumb">
             <p>Chair CLAIR</p>
             <div class="gallery-underline">
-              </div>
-            </div>
-          </div>
-          <div class="image2">
-           <div class="thumb">
-            <p>Chair MARGARITA</p>
-            <div class="gallery-underline">
-              </div>
-            </div>
-          </div>       
-          <div class="text-field">
-            <h3>Finds all inputs</h3>
-            <div class="gallery-underline"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias aliquid, consequuntur sit illo ducimus reiciendis culpa, consectetur porro</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum odio architecto.</p>
             </div>
           </div>
         </div>
+        <div id="image1" class="image2">
+          <div id="thumb1" class="thumb">
+            <p>Chair MARGARITA</p>
+            <div class="gallery-underline">
+            </div>
+          </div>
+        </div>
+        <div class="text-field">
+          <h3>Finds all inputs</h3>
+          <div class="gallery-underline"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias aliquid, consequuntur sit illo ducimus reiciendis culpa, consectetur porro</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum odio architecto.</p>
+        </div>
+      </div>
+      <!--        </div>-->
       </div>
     </section>
     <section class="cards">
@@ -127,6 +134,89 @@
         </div>
       </div>
     </section>
+    
+    
+    
+    <section class="application ">
+    <div class="container">
+    <div class="main_width">
+        <section class="choice_part inline">
+            <div>
+                <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                <span class="green_bell"></span>
+            </div>
+
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz rodzaj</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li>Clair</li>
+                        <li>Margarita</li>
+                        <li>Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz kolor</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li>Czerwony</li>
+                        <li>Czarny</li>
+                        <li>Pomarańczowy</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz materiał</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li>Tkanina</li>
+                        <li>Skóra</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-transport-price="200">
+                    <label for="transport">Transport</label>
+                </div>
+                <!--<div class="checkbox"></div>-->
+                <!--<span class="list_label inline_text">Transport</span>-->
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="img/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <div class="align_right">
+                <h3>PODSUMOWANIE</h3>
+                <span class="green_bell"></span>
+            </div>
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="title">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+        </section>
+    </div>
+    </div>
+</section>
+    
+    
+    
+    
     <section class="contact">
       <div class="container">
         <h2 class="text-underline">kontakt</h2>
@@ -147,10 +237,18 @@
           </div>
           <div class="contact-form2">
             <img src="img/red_chair.png" alt="">
-            <div class="checked">
+             
+<!--
+             <div class="checked">
               <img src="img/form_ok.jpg" alt="">
               <p>Zgadzam się na przetwarzanie danych osobowych</p>
             </div>
+-->
+             
+              <div class="checked checkbox check-box">
+                    <input type="checkbox" id="send">
+                    <label id="sub" for="send">Zgadzam się na przetwarzanie danych osobowych</label>
+                </div>
             <button type="submit" class="btn btn-send">Wyślij</button>
           </div>
         </div>
